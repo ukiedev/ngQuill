@@ -244,6 +244,9 @@
                             // Set initial value;
                             editor.setHTML(newText);
                         }
+                        if (newText === undefined) {
+                            editor.setHTML('');
+                        }
                     });
 
                     // toggle readOnly
